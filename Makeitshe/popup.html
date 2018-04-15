@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+    <title>Make it She</title>
+    <style type="text/css">
+    body {
+        margin: 10px;
+        white-space: nowrap;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #links-area {
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    #tweet {
+        float: left;
+    }
+    #onoff {
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="stats">
+        <h1><span id="malep"></span>% male presence <p>vs<p> <span id="femalep"></span>% female presence</h1>
+        <div id="links-area">
+            <div id="tweet">
+                <a id="tweetB" href="#">Tweet</a>
+            </div>
+            <div id="onoff">
+                <a id="onoffB" href="#">Turn On</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='jquery-3.2.1.min.js'></script>
+<script type='text/javascript' src='popup.js'></script>
+</html>
