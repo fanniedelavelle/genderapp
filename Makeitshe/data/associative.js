@@ -204,6 +204,7 @@ window.name_dict = {
     "Fredrick": "Fredricka",
     "Ambrose": "Amber",
     "Emanuel": "Emmanuela",
+    "Emmanuel": "Emmanuelle",
     "Uriah": "Moriah",
     "Ezekiel": "Beckie",
     "Isaiah": "Mariah",
