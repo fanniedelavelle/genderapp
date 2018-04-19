@@ -140,7 +140,6 @@ window.word_dict = {
     "boogymen": "boogypersons",
     "bookman": "bookperson",
     "bookmen": "bookpersons",
-    "bowman": "bowperson",
     "bowmen": "bowpersons",
     "brakeman": "brakeperson",
     "brakemen": "brakepersons",
