@@ -56,11 +56,11 @@ function applyContent () {
 
         }
 
-        // Delete surname after Mr, Ms, M, Mme, Lady, Lord
+        // Delete surname after Mr, Ms, M, Mme, Mrs, Lady, Lord
 
         for ( var i = 0; i < words.length; i ++ ) {
 
-            if ( words[ i ] === 'Mr' || words[ i ] === 'Ms' || words[ i ] === 'M' || words[ i ] === 'Mme' || words[ i ] === 'Lady' || words[ i ] === 'Lord' ) {
+            if ( words[ i ] === 'Mr' || words[ i ] === 'Ms' || words[ i ] === 'M' || words[ i ] === 'Mme' || words[ i ] === 'Mrs' || words[ i ] === 'Lady' || words[ i ] === 'Lord' ) {
 
                 words.splice( i + 1, 1 );
 
