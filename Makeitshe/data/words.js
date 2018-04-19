@@ -400,7 +400,6 @@ window.word_dict = {
     "veniremen": "venirepersons",
     "workingman": "workingperson",
     "workingmen": "workingpersons",
-    "workman": "workperson",
     "workmen": "workpersons",
     "yachtman": "yachtperson",
     "yachtmen": "yachtpersons",
