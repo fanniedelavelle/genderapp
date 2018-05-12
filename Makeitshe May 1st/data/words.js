@@ -416,7 +416,6 @@ window.word_dict = {
   "yachtman": "yachtperson",
   "yachtmen": "yachtpersons",
   "yachtsman": "yachtsperson",
-  "yachtsmen": "yachtspersons",
   "yardman": "yardperson",
   "yardmen": "yardpersons "
 }
