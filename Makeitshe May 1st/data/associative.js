@@ -10,6 +10,8 @@ window.name_dict = {
   "Georgios": "Georgia",
   "Kaito": "Katy",
   "Kait": "Katie",
+  "Hugo": "Huguette",
+  "Mitch": "Michelle",
   "Kaite": "Katheryn",
   "Georg": "Georgia",
   "George": "Georgia",
