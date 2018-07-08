@@ -1,6 +1,7 @@
 window.name_dict = {
   "Lionel": "Lionella",
   "Roy": "Roya",
+  "Diego": "Diana",
   "Wayne": "Wynonna",
   "Raphael": "Raphaela",
   "Ryan": "Rihanna",
@@ -40,7 +41,7 @@ window.name_dict = {
   "Ross-thomas": "Rosseta",
   "Charles": "Charlotte",
   "John": "Joanna",
-  "Tom": "Tommy",
+  "Tom": "Tommie",
   "Harold": "Harriet",
   "Rick": "Ricki",
   "Chuck": "Chieko",
@@ -957,5 +958,5 @@ window.name_dict = {
   "Jose luis": "Roselia",
   "Jarett": "Janett",
   "Silvano": "Silvana",
-  "Chesky": "Chelsy "
+  "Chesky": "Chelsie "
 }
