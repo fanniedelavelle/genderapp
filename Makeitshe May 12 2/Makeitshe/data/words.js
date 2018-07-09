@@ -1,5 +1,6 @@
 window.word_dict = {
   "mr": "ms",
+  "he's": "she's",
   "he": "she",
   "his": "her",
   "son-in-law": "daughter-in-law",
