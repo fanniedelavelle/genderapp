@@ -16,8 +16,6 @@ function setStats ( stats ) {
 
     if ( ! stats ) return;
 
-    console.log( stats.male, stats.female )
-
     m = stats.male;
     f = stats.female;
     $('#malep').html( Math.round( stats.male ));
@@ -40,26 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if ( siteStateList[ activeDomain ] !== true ) {
 
-        $('#onoffB').html('Turn On');
-        $('h1').hide();
+        $('#on-off').switchButton({ checked: false, labels_placement: "left" });
+        $('#content').hide();
+        $('#disabled').show();
 
     } else {
 
-        $('#onoffB').html('Turn Off');
-        $('h1').show();
+        $('#on-off').switchButton({ checked: true, labels_placement: "left" });
+        $('#content').show();
+        $('#disabled').hide();
 
     }
 
-    $('#onoffB').click( function ( event ) {
+    $('#on-off').bind( 'change', function ( event ) {
 
-        var current_text = $( this ).html();
+        var enabled = $('#on-off')[0].checked;
 
-        if ( current_text == 'Turn On' ) {
+        if ( enabled ) {
 
-            $('h1').show();
+            $('#content').show();
+            $('#disabled').hide();
             updateSiteStateList( activeDomain, true );
             chrome.browserAction.setIcon({ path: "icon_on.png" });
-            $('#onoffB').html('Turn Off');
 
             chrome.tabs.query( { active: true, currentWindow: true }, function ( tabs ) {
 
@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
 
-            $('h1').hide();
+            $('#content').hide();
+            $('#disabled').show();
             updateSiteStateList( activeDomain, false );
             chrome.browserAction.setIcon({ path: "icon_off.png" });
-            $('#onoffB').html('Turn On');
 
             chrome.tabs.query( { active: true, currentWindow: true }, function ( tabs ) {
 
@@ -101,8 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         $('#tweetB').click( function ( event ) {
 
-            tweetText = m + "% mentions of men vs " + f + "% women on this page. Let's bridge the gender gap!";
-            tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + tabs[0].url + "&via=makeitshe";
+            m = m || 0;
+            f = f || 0;
+
+            tweetText = Math.round( m ) + "% mentions of men vs " + Math.round( f ) + "% women on this page. Let's bridge the gender gap!";
+            tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent( tweetText ) + "&url=" + tabs[0].url + "&via=makeitshe";
 
             chrome.tabs.create({
                 active: true,
