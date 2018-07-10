@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Make it She",
     "description": "[This extension aims to replace certain male words with their female counterparts.]",
-    "version": "1.0",
+    "version": "4.0",
     "background": {
       "persistent": false,
       "scripts": ["background.js"]
@@ -19,7 +19,7 @@
     "content_scripts": [
     {
         "matches": ["*://*/*"],
-        "js": ["jquery-3.2.1.min.js", "data/associative.js", "data/words.js", "content.js"],
+        "js": ["jquery.min.js", "data/associative.js", "data/words.js", "data/fnames.js", "content.js"],
         "css": ["style.css"],
         "run_at": "document_end"
     }],
