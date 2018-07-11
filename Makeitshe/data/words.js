@@ -221,7 +221,6 @@ window.word_dict = {
   "dairyman": "dairyperson",
   "dairymen": "dairypersons",
   "dalesmen": "dalespersons",
-  "damen": "dapersons",
   "daysman": "daysperson",
   "daysmen": "dayspersons",
   "deathsman": "deathsperson",
