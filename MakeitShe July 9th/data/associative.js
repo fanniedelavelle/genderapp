@@ -29,7 +29,7 @@ window.name_dict = {
   "Donald": "Dona",
   "Ronald": "Ronna",
   "Ron": "Rona",
-  "Andrew": "Andrée",
+  "Andrew": "Andrea",
   "James": "Jenna",
   "Benjamin": "Bernadine",
   "Ben": "Bena",
