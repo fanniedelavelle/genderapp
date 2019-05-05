@@ -59,7 +59,7 @@ window.word_dict = {
   "dads": "moms",
   "he's": "she's",
   "heir": "heiress",
-  "heirs": "heiresses"
+  "heirs": "heiresses",
   "baron": "baroness",
   "barons": "baronesses",
   "prince": "princess",
