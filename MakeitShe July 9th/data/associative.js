@@ -60,6 +60,7 @@ window.name_dict = {
   "Robert": "Roberta",
   "Bob": "Roberta",
   "Bobbie": "Roberta",
+  "Boris": "Billie",
   "Jacob": "Janyce",
   "Jacobi": "Jacinta",
   "Jacobe": "Janyce",
