@@ -939,5 +939,6 @@ window.name_dict = {
   "Gregory": "Gabrielle",
   "Samuel": "Samuela",
   "Raymond": "Roberta",
+  "Derek", "Dina",
   "Chesky": "Chelsie "
 }
